@@ -1,0 +1,13 @@
+[package]
+name = "aoc2025"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+resolver = "3"
+
+[dependencies]
+anyhow = "1.0.100"
+
+[[bin]]
+name = "day_1"
+path = "src/day_1.rs"
