@@ -11,3 +11,7 @@ anyhow = "1.0.100"
 [[bin]]
 name = "day_1"
 path = "src/day_1.rs"
+
+[[bin]]
+name = "day_2"
+path = "src/day_2.rs"

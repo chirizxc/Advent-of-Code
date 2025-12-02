@@ -1,18 +1,10 @@
 mod helpers;
 
-use crate::helpers::read_txt;
-
 fn part_1(input: &str) -> anyhow::Result<i32> {
     let mut pos: i32 = 50;
     let mut count = 0;
 
-    for line in input.lines() {
-        let line = line.trim();
-
-        if line.is_empty() {
-            continue;
-        }
-
+    for line in input.trim().lines() {
         let (direction, distance) = line.split_at(1);
         let distance: i32 = distance.parse()?;
 
@@ -34,13 +26,7 @@ fn part_2(input: &str) -> anyhow::Result<i32> {
     let mut pos: i32 = 50;
     let mut count = 0;
 
-    for line in input.lines() {
-        let line = line.trim();
-
-        if line.is_empty() {
-            continue;
-        }
-
+    for line in input.trim().lines() {
         let (direction, distance) = line.split_at(1);
         let distance: i32 = distance.parse()?;
 
@@ -63,7 +49,7 @@ fn part_2(input: &str) -> anyhow::Result<i32> {
 }
 
 fn main() -> anyhow::Result<()> {
-    let input = read_txt("input/day_1.txt")?;
+    let input = helpers::read_txt("input/day_1.txt")?;
     println!("Part 1: {}", part_1(&input)?);
     println!("Part 2: {}", part_2(&input)?);
     Ok(())
