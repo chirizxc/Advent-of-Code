@@ -41,7 +41,7 @@ fn part_2(input: &str) -> anyhow::Result<i32> {
                     }
                 }
             }
-            _ => continue,
+            _ => {}
         }
     }
 

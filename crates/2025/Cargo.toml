@@ -8,6 +8,9 @@ resolver = "3"
 [dependencies]
 anyhow = "1.0.100"
 
+[lints]
+workspace = true
+
 [[bin]]
 name = "day_1"
 path = "src/day_1.rs"

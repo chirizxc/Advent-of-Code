@@ -13,7 +13,7 @@ fn part_1(input: &str) -> anyhow::Result<u64> {
 
             if id_str.len() % 2 == 0 {
                 let half = id_str.len() / 2;
-                if &id_str[..half] == &id_str[half..] {
+                if id_str[..half] == id_str[half..] {
                     total += id;
                 }
             }

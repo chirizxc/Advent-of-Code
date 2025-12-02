@@ -6,3 +6,11 @@ resolver = "3"
 version = "0.0.0"
 edition = "2024"
 license = "UNLICENCE"
+
+[workspace.lints]
+rust.warnings = { level = "deny" }
+clippy.perf = { level = "deny", priority = -1 }
+clippy.style = { level = "warn", priority = -1 }
+clippy.pedantic = { level = "warn", priority = -1 }
+
+clippy.let_and_return = "allow" # sometimes good to name what you are returning
